@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Proyecto_Comida">
         <activity
+            android:name=".Informacion_act"
+            android:exported="true" />
+        <activity
             android:name=".calculos_act"
             android:exported="true" />
         <activity
