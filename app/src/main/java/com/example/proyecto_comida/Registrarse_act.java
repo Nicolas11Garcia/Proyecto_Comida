@@ -6,18 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Informacion_act extends AppCompatActivity {
+public class Registrarse_act extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_informacion);
+        setContentView(R.layout.activity_registrarse);
     }
+
+
 
 
     public void login(View view){
 
-        Intent i = new Intent(this, Menu_act.class);
+        Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
 
     }

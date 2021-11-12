@@ -47,7 +47,7 @@
         app:layout_constraintVertical_bias="0.03">
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/usernameText"
             android:layout_width="match_parent"
             android:layout_height="59dp"
             android:backgroundTint="#AFB1B5"
@@ -59,7 +59,7 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/passwordText"
             android:layout_width="match_parent"
             android:layout_height="59dp"
             android:backgroundTint="#AFB1B5"
@@ -94,16 +94,33 @@
         android:fontFamily="@font/poppins"
         android:text="Visitanos"
         android:textColor="#7A869A"
-        android:textSize="12sp"
+        android:textSize="13dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.347" />
+        app:layout_constraintVertical_bias="0.534" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="222dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/poppins"
+        android:onClick="registrarse"
+        android:text="¿No tienes cuenta? Registrate haciendo clic aqui"
+        android:textAlignment="center"
+        android:textColor="#7A869A"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.125" />
 
     <LinearLayout
-        android:layout_width="288dp"
-        android:layout_height="55dp"
+        android:layout_width="291dp"
+        android:layout_height="65dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -118,6 +135,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/transparent"
+            android:onClick="Instagram"
             app:srcCompat="@drawable/i"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
@@ -128,18 +146,20 @@
             android:layout_weight="1"
             android:background="@android:color/transparent"
 
+            android:onClick="Whatsap"
             app:srcCompat="@drawable/w"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:background="@android:color/transparent"
-
             android:id="@+id/imageButton8"
+
             android:layout_width="108dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/f"
+            android:background="@android:color/transparent"
+            android:onClick="Facebook"
 
+            app:srcCompat="@drawable/f"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
